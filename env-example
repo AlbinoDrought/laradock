@@ -250,6 +250,11 @@ CADDY_CUSTOM_CADDYFILE=./caddy/Caddyfile
 
 LARAVEL_ECHO_SERVER_PORT=6001
 
+### FTP ################################################################################################################
+
+FTP_USER=homestead
+FTP_PASSWORD=secret
+FTP_PORT=21
 
 ##### TO BE CONTINUE .................................
 

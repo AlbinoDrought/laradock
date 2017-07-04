@@ -621,6 +621,20 @@ services:
         - frontend
         - backend
 
+### FTP #######################################################
+
+    ftp:
+      image: panubo/vsftpd
+      environment:
+       - FTP_USER=${FTP_USER}
+       - FTP_PASSWORD=${FTP_PASSWORD}
+      volumes:
+       - ${DATA_SAVE_PATH}/ftp:/srv/
+      ports:
+       - "${FTP_PORT}:21"
+      networks:
+       - backend
+
 ### Networks Setup ############################################
 
 networks:
